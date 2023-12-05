@@ -764,12 +764,3 @@ make build-ui-arm;
 
 ---
 
-## License
-
-See [LICENSE](LICENSE.md).
-# issuer_node
-# issuer_node
-# issuer_node
-# issuer_node
-# issuer_node
-# issuer_node
