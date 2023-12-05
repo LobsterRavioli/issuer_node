@@ -13,10 +13,6 @@ This repository is for anyone to create their own [issuer node](https://0xpolygo
 
 Running the app with Docker allows for minimal installation and a quick setup. This is recommended **for evaluation use-cases only**, such as local development builds.
 
-#### (Optional) Quick Start Steps
-
-These steps can be followed to get up and running with all features as quickly as possible.
-
 > **NOTE:** For more detailed step-by-step instructions and guides to commands and examples, you may skip to the next section.
 
 1. Copy `.env-api.sample` as `.env-api` and `.env-issuer.sample` as `.env-issuer`. Please see the [configuration](#configuration) section for more details.
