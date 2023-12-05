@@ -72,13 +72,15 @@ Any of the following RPC providers can be used:
 
 If it is desired to run a free public forwarding URL, see [Getting A Public URL](#getting-a-public-url).
 
+**NOTA: UTILIZZA UN INDIRIZZO IP LOCALE**
+
 Configure `.env-issuer` with the following details (or amend as desired).
 
 ```bash
 # ...
 
 # See Section: Getting A Public URL
-ISSUER_SERVER_URL=<https://unique-forwaring-or-public-url.ngrok-free.app>
+ISSUER_SERVER_URL=<utilizza un indirizzo ip locale>
 # Defaults for Basic Auth in Base64 ("user-issuer:password-issuer" = "dXNlci1pc3N1ZXI6cGFzc3dvcmQtaXNzdWVy")
 # If you just want to get started, don't change these
 ISSUER_API_AUTH_USER=user-issuer
