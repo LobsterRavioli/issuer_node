@@ -42,6 +42,11 @@ make clean-vault;
 ```bash
 make up;
 ```
+If you want to shut down the node run this command: 
+```bash
+make down
+```
+
 3.  Run this to create the private key
 ```bash
 make private_key=<YOUR WALLET PRIVATE KEY>;
@@ -97,6 +102,7 @@ File containing the basic auth credentials: `.env-ui`
 ISSUER_UI_AUTH_USERNAME=user-ui
 ISSUER_UI_AUTH_PASSWORD=password-ui
 ```
+
 
 ![Issuer UI](docs/assets/img/8088.png)
 
