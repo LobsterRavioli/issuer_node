@@ -66,7 +66,7 @@ ISSUER_API_UI_AUTH_USER=user-api
 ISSUER_API_UI_AUTH_PASSWORD=password-api
 ```
 
-Then authenticate via the following form on <http://<YOUR_LOCAL_IP_ADDRESS>:
+Then authenticate via the following form on <http://<YOUR_LOCAL_IP_ADDRESS>>
 
 ![Issuer UI API Authentication](docs/assets/img/3002-auth.png)
 
