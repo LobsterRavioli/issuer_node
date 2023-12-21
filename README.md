@@ -62,8 +62,6 @@ make run-ui-arm; # for m1/m2 mac users
 Make sure to set the HTTP authentication credentials in `.env-api` to the following:
 
 ```bash
-# ...
-
 ISSUER_API_UI_AUTH_USER=user-api
 ISSUER_API_UI_AUTH_PASSWORD=password-api
 ```
