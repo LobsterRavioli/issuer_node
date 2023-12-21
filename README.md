@@ -1,18 +1,7 @@
-# Polygon ID Issuer Node
-
-[![Checks](https://github.com/0xPolygonID/sh-id-platform/actions/workflows/checks.yml/badge.svg)](https://github.com/0xPolygonID/sh-id-platform/actions/workflows/checks.yml)
-[![golangci-lint](https://github.com/0xPolygonID/sh-id-platform/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/0xPolygonID/sh-id-platform/actions/workflows/golangci-lint.yml)
-
-This is a set of tools and APIs for issuers of zk-proof credentials, designed to be extensible. It allows an authenticated user to create schemas for issuing and managing credentials of identities. It also provides a [user interface](ui/README.md) to manage issuer schemas, credentials, issuer state and connections.
-
-This repository is for anyone to create their own [issuer node](https://0xpolygonid.github.io/tutorials/issuer-node/issuer-node-overview/) for Polygon ID.
-
----
-
 ## Dependencies
 1. make command.
 2. Docker for running commands.
-## Initial setup
+### Modify the config file
 
 	1. Make a copy of the following environment variables files:
 ```bash
@@ -31,44 +20,18 @@ ISSUER_ETHEREUM_URL=<YOUR_RPC_PROVIDER_URI_ENDPOINT>
 ```
 You can take ISSUER_ETHEREUM_URL from rpc providers like infura.
 
-3. Run project services (key storage and data storage):
-```bash
-make up; 
-```
-4. Import wallet private key
-```bash
-make private_key=<YOUR_WALLET_PRIVATE_KEY> add-private-key;
-#EXAMPLE make private_key=  add-private-key;
-```
-5. Add vault token:
-```bash
-make add-vault-token;
-```
-6. Generate issuer did
-###### For Intel/Amd processors
-```bash
-make generate-issuer-did;
-```
-###### For apple m1/m2 users
-```bash
-make generate-issuer-did-arm;
-```
+## How to run the issuer node
+Every time you want the issuer node up, you need to execute sequentially this commands.
 
-7. run this
-```bash
-make down;
-```
-
-### To start the node after the setup
-1. run this
+1. run this to clear the node.
 ```bash
 make clean-vault;
 ```
-2. run this
+2. run this to start the node
 ```bash
 make up;
 ```
-3.  run this
+3.  run this to create the private key
 ```bash
 make private_key=<YOUR WALLET PRIVATE KEY>;
 ```
@@ -80,18 +43,18 @@ make add-vault-token;
 #           vault write iden3/import/pbkey key_type=ethereum private_key=<YOUR_WALLET_PRIVATE_KEY>
 #   Success! Data written to: iden3/import/pbkey
 ```
-5. run this
+5. run this to generate the issuer of the node
 ```bash
 make generate-issuer-did;
 #OR
 make generate-issuer-did-arm; # for m1/m2 mac users
 ```
-6. run this
+6. run this to start the node-ui
 ```bash
 make run-ui;
 #OR
 make run-ui-arm; # for m1/m2 mac users
-
+```
 #### Using the UI API
 
 Make sure to set the HTTP authentication credentials in `.env-api` to the following:
@@ -128,6 +91,4 @@ ISSUER_UI_AUTH_PASSWORD=password-ui
 
 ![Issuer UI](docs/assets/img/8088.png)
 
-
 ---
-
