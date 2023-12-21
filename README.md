@@ -2,13 +2,13 @@
 
 ## Dependencies
 1. Make command.
-2. Docker.
+2. Docker. (and run docker desktop)
 
 ### Clone this repo
 ```bash
 git clone https://github.com/LobsterRavioli/issuer_node.git
 ```
-move to the project folder
+### Move to the project folder
 ```bash
 cd issuer_node
 ```
