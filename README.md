@@ -5,7 +5,7 @@
 2. Docker for running commands.
 ### Modify the config file
 
-	1. Make a copy of the following environment variables files:
+1. Make a copy of the following environment variables files:
 ```bash
 cp .env-api.sample .env-api;
 cp .env-issuer.sample .env-issuer;
