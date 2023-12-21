@@ -3,7 +3,16 @@
 ## Dependencies
 1. Make command.
 2. Docker.
-### Modify the config file
+
+### Clone this repo
+```bash
+git clone https://github.com/LobsterRavioli/issuer_node.git
+```
+move to the project folder
+```bash
+cd issuer_node
+```
+### Setup environment variables 
 
 1. Make a copy of the following environment variables files:
 ```bash
