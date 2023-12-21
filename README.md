@@ -1,8 +1,8 @@
 # Issuer node docs
 
 ## Dependencies
-1. make command.
-2. Docker for running commands.
+1. Make command.
+2. Docker.
 ### Modify the config file
 
 1. Make a copy of the following environment variables files:
