@@ -115,6 +115,6 @@ Use [qe](https://qr.io/)https://qr.io/ to get the qr code (in the "Text" section
 5. Go to "Get Connection QrCode" and copy the json content.
 6. Go to [qe](https://qr.io/)https://qr.io/ "Text section" and paste the json content.
 
-Let the wallet scan the auth qrcode first then the credential qrcode issued.
+Let the wallet scan the auth qrcode first and then the credential qrcode issued.
 
 ---
