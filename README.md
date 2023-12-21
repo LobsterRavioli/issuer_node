@@ -49,7 +49,7 @@ make down;
 
 3.  Run this to create the private key
 ```bash
-make private_key=<YOUR WALLET PRIVATE KEY>;
+make private_key=<YOUR WALLET PRIVATE KEY> add-private-key;
 ```
 4. Run this to add the private key to the vault (Repeat this until you get the expected output)
 ```bash
