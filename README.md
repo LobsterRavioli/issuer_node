@@ -47,17 +47,18 @@ If you want to shut down the node run this command:
 make down;
 ```
 
-3.  Run this to create the private key
+3.  Run this to create the private key (Repeat this until you get the expected output).
 ```bash
 make private_key=<YOUR WALLET PRIVATE KEY> add-private-key;
-```
-4. Run this to add the private key to the vault (Repeat this until you get the expected output)
-```bash
-make add-vault-token;
 # Expected Output:
 #   docker exec issuer-vault-1 \
 #           vault write iden3/import/pbkey key_type=ethereum private_key=<YOUR_WALLET_PRIVATE_KEY>
 #   Success! Data written to: iden3/import/pbkey
+```
+4. Run this to add the private key to the vault.
+```bash
+make add-vault-token;
+
 ```
 5. Run this to generate the did of the issuer node.
 ```bash
