@@ -2,7 +2,7 @@
 
 ## Dependencies
 1. Make command.
-2. Docker. (and run docker desktop)
+2. Docker (docker desktop running in background).
 
 ### Clone this repo
 ```bash
