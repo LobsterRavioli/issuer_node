@@ -20,7 +20,7 @@ cp .env-api.sample .env-api;
 cp .env-issuer.sample .env-issuer;
 cp .env-ui.sample .env-ui;
 ```
-2. Init environment variable .env.issuer :
+2. Init environment variable .env-issuer :
 ```bash
 ISSUER_SERVER_URL=<LOCAL IP ADDRESS>
 #EXAMPLE ISSUER_SERVER_URL= http://192.168.1.3:3002
