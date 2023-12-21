@@ -104,17 +104,18 @@ ISSUER_UI_AUTH_PASSWORD=password-ui
 ```
 
 ![Issuer UI](docs/assets/img/8088.png)
-### How to get the qrcode for JSON content
-Use [qe](https://qr.io/)https://qr.io/ to get the qr code (in the "Text" section) and paste the body given by ui-api.
 
-### Issue a credential
-1. In the issuer-ui-api go to "Create a credential section", and paste the did of the wallet holder. (For testing porpuses issuer-api let you define and issue KYAge credential.)
-2. Copy the id given by the response.
-3. Go to "Get Credential" section and paste the id.
-4. Go to [qe](https://qr.io/)https://qr.io/ "Text section" and paste the json content.
-5. Go to "Get Connection QrCode" and copy the json content.
-6. Go to [qe](https://qr.io/)https://qr.io/ "Text section" and paste the json content.
+### How to get the QR code for JSON content
 
-Let the wallet scan the auth qrcode first and then the credential qrcode issued.
+Use [qe](https://qr.io/) to generate the QR code (in the "Text" section) and paste the body provided by the UI-API.
 
+### Issue a Credential
+1. In the issuer-UI-API, navigate to the "Create a Credential" section and paste the DID of the wallet holder. (For testing purposes, the issuer-API allows you to define and issue a KYAge credential.)
+2. Copy the ID provided in the response.
+3. Go to the "Get Credential" section and paste the ID.
+4. Visit [qe](https://qr.io/) "Text section" and paste the JSON content.
+5. Proceed to the "Get Connection QR Code" section and copy the JSON content.
+6. Go to [qe](https://qr.io/) "Text section" and paste the JSON content.
+
+Allow the wallet to scan the authentication QR code first and then the issued credential QR code.
 ---
