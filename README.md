@@ -1,3 +1,5 @@
+# Issuer node docs
+
 ## Dependencies
 1. make command.
 2. Docker for running commands.
@@ -23,19 +25,19 @@ You can take ISSUER_ETHEREUM_URL from rpc providers like infura.
 ## How to run the issuer node
 Every time you want the issuer node up, you need to execute sequentially this commands.
 
-1. run this to clear the node.
+1. Run this to clear the node.
 ```bash
 make clean-vault;
 ```
-2. run this to start the node
+2. Run this to start the node
 ```bash
 make up;
 ```
-3.  run this to create the private key
+3.  Run this to create the private key
 ```bash
 make private_key=<YOUR WALLET PRIVATE KEY>;
 ```
-4. run this (Repeat this until you get the expected output)
+4. Run this to add the private key to the vault (Repeat this until you get the expected output)
 ```bash
 make add-vault-token;
 # Expected Output:
@@ -43,13 +45,13 @@ make add-vault-token;
 #           vault write iden3/import/pbkey key_type=ethereum private_key=<YOUR_WALLET_PRIVATE_KEY>
 #   Success! Data written to: iden3/import/pbkey
 ```
-5. run this to generate the issuer of the node
+5. Run this to generate the did of the issuer node.
 ```bash
 make generate-issuer-did;
 #OR
 make generate-issuer-did-arm; # for m1/m2 mac users
 ```
-6. run this to start the node-ui
+6. Run this to start the node-ui.
 ```bash
 make run-ui;
 #OR
