@@ -44,7 +44,7 @@ make up;
 ```
 If you want to shut down the node run this command: 
 ```bash
-make down
+make down;
 ```
 
 3.  Run this to create the private key
